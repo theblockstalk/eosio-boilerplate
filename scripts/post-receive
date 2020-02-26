@@ -1,7 +1,13 @@
 #!/bin/sh
 
-cd ..
-GIT_DIR='.git'
-umask 002 && git reset --hard
-cd ../front-end-react
-npm run serve
+echo "Server script started"
+
+cd ../project.git-working-tree
+git pull ../project.git
+./back-end-nodejs/test.sh
+#GIT_DIR='.git'
+#umask 002 && git reset --hard
+#cd ../front-end-react
+#npm run serve
+
+echo "Server script competed"

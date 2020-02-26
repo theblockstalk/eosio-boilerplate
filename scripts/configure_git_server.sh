@@ -6,6 +6,7 @@ cat eosio-boilerplate/scripts/keys/ec2-ssh.pub >> ~/.ssh/authorized_keys
 mkdir $HOME/project.git
 cd $HOME/project.git
 git init --bare
+git worktree add $HOME/project.git-working-tree master
 
-cp post-recieve $HOME/project.git/hooks/
+cp $HOME/eosio-boilerplate/scripts/post-recieve $HOME/project.git/hooks/
 chmod +x $HOME/project.git/hooks/post-receive
