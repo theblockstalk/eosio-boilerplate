@@ -8,3 +8,4 @@ cd $HOME/project.git
 git init --bare
 
 cp post-recieve $HOME/project.git/hooks/
+chmod +x $HOME/project.git/hooks/post-receive
