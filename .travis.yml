@@ -1,7 +1,6 @@
 
 # https://docs.travis-ci.com/user/deployment/
 deploy:
-  # deploy master to production
   - provider: script
     script:
       - git push ec2 master
