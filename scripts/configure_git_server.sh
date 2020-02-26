@@ -1,9 +1,8 @@
 #!/bin/bash
 
 git clone https://github.com/theblockstalk/eosio-boilerplate.git
-cd eosio-boilerplate/scripts
-cat ec2-ssh.pub >> ~/.ssh/authorized_keys
+cat eosio-boilerplate/scripts/keys/ec2-ssh.pub >> ~/.ssh/authorized_keys
 
-mkdir $HOME/myproject.git
-cd $HOME/myproject.git
+mkdir $HOME/project.git
+cd $HOME/project.git
 git init --bare
